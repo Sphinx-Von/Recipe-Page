@@ -29,7 +29,11 @@
             50: "hsl(330, 100%, 98%)",
             800: "hsl(332, 51%, 32%)"
           }
-        }
+        },
+         fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            young: ['Young Serif'],
+          }
       }
     }
   }
@@ -41,23 +45,26 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-red-200 font-outfit p-6 md:p-10 lg:p-20 flex justify-center items-center">
-  <div class="bg-white w-[650px] h-full rounded-xl p-6">
+<body class="bg-stone-100 font-outfit p-6 md:p-10 lg:p-20 flex justify-center items-center">
+  <div class="bg-white w-[400px] h-full md:h-full md:w-[500px]  rounded-xl p-6">
     <img src="assets/images/image-omelette.jpeg" alt="omelete"
     class="w-full rounded-lg mb-6">
-    <h1>Simple Omelette Recipe</h1>
-    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+
+    <h1 class="font-young text-3xl font-extrabold">Simple Omelette Recipe</h1>
+    <p class="font-outfit text-sm text-gray-800 mt-2">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
   to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
-  <h2>Preparation time</h2>
 
+  <div class="bg-rose-50 rounded-xl p-8 mt-10 font-young">
+  <h2 class="font-bold text-rose-800">Preparation time</h2>
   <ul class="list-disc list-inside">
-  <li>Total: Approximately 10 minutes</li>
-  <li>Preparation: 5 minutes</li>
-  <li>5 minutes</li>
+  <li><span class="font-bold">Total</span>: Approximately 10 minutes</li>
+  <li><span class="font-bold">Preparation</span>: 5 minutes</li>
+  <li><span class="font-bold">Cooking</span>:5 minutes</li>
   </ul>
+  </div>
 
-  <h1>Ingredients</h1>
+  <h2 class="text-brown-800 font-young font-bold text-3xl">Ingredients</h2>
 
   <ul class="list-disc list-inside">
   <li>  2-3 large eggs</li>
@@ -67,7 +74,7 @@
   <li> fillings: cheese, diced vegetables, cooked meats, herbs</li>
   </ul>
 
-  <h1>Instructions</h1>
+  <h2>Instructions</h2>
   <ul class="list-disc list-inside">
     <li>
       Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
